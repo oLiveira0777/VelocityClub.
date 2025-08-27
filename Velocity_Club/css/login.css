@@ -1,0 +1,319 @@
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Menu lateral esquerdo */
+.left-menu {
+    width: var(--menu-width);
+    background-color: var(--secondary-color);
+    float: left;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-bottom: 5px;
+}
+
+.nav-menu li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: var(--primary-color);
+}
+
+.nav-menu li.active a {
+    background-color: var(--primary-color);
+}
+
+/* Conteúdo principal */
+.content {
+    margin-left: var(--menu-width);
+    flex: 1;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 2;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.banner {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos para o formulário de registro */
+.registration-form {
+    background-color: var(--post-bg);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+}
+
+.form-header {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.form-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.textarea-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    min-height: 100px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.save-btn, .post-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.save-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.post-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: rgba(255, 24, 1, 0.1);
+}
+
+.post-btn:hover {
+    background-color: #e01500;
+}
+
+/* Sidebar styles */
+.community-info {
+    background-color: var(--post-bg);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.community-info h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.community-stats {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.stat {
+    flex: 1;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: var(--light-text);
+}
+
+.user-ADM {
+    background-color: #edeeee;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.user-ADM h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ADM {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 2px;
+}
+
+.community-links h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.community-links {
+    margin-top: 15px;
+}
+
+.community-links a {
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Botão de login */
+.user-profile {
+    margin: 10px;
+    width: 131px;
+    height: 51px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: linear-gradient(
+        to bottom right,
+        #ff2e2e 0%,
+        rgba(46, 142, 255, 0) 30%
+    );
+    background-color: rgba(255, 46, 46, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile:hover,
+.user-profile:focus {
+    background-color: rgba(255, 46, 46, 0.7);
+    box-shadow: 0 0 10px rgba(255, 46, 46, 0.5);
+    outline: none;
+}
+
+.user-profile-inner {
+    width: 127px;
+    height: 47px;
+    border-radius: 13px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.user-profile-inner svg {
+    width: 27px;
+    height: 27px;
+    fill: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .left-menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+        float: none;
+    }
+    
+    .content {
+        margin-left: 0;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+}

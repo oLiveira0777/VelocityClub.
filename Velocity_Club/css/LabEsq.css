@@ -1,0 +1,28 @@
+:root {
+            --primary-color: #FF1801;
+            --secondary-color: #1A1A1B;
+            --background-color: #DAE0E6;
+            --post-bg: #FFFFFF;
+            --text-color: #222222;
+            --light-text: #787C7E;
+            --border-color: #CCCCCC;
+            --menu-width: 200px;
+        }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;    
+}

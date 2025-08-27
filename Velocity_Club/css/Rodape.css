@@ -1,0 +1,15 @@
+footer{ 
+    background-color: #1A1A1B;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+}
+footer img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
